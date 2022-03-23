@@ -4,8 +4,9 @@ import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from "react-scroll";
 
 export const Nav = styled.nav`
-background: #000;
+/*background: #000;*/
 /*background: transparent;*/
+background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
 height: 80px;
 margin-top: -80px;
 display: flex;
@@ -60,9 +61,9 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
  display: flex;
- alighn-items: center;
- list-style: none;
+ align-items: center;
  text-align: center;
+ list-style: none;
  margin-right: -22px;
 
  @media screen and (max-width:768px) {
@@ -83,7 +84,7 @@ export const NavLinks = styled(LinkS)`
  height: 100%;
  cursor: pointer;
 
- &:hover {
+ &.active {
      border-bottom: 3px solid #01bf71;
  }
 `;

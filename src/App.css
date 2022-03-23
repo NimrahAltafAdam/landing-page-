@@ -26,11 +26,13 @@
 
 .wave {
   position: absolute;
-     bottom: 0;
+     top:1130px;
      left: 0;
 }
 
-.check {
+/*.check {
   position: absolute;
   top: 0px;
-}
+}*/
+
+
