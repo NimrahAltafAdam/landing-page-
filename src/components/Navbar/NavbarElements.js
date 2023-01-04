@@ -15,7 +15,7 @@ font-size: 1rem;
 position: sticky;
 top: 0;
 z-index: 10;
-
+width: 100;
 @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
 }
@@ -62,6 +62,7 @@ export const MobileIcon = styled.div`
 export const NavBtn = styled.nav`
  display: flex;
  align-items: center;
+ margin-left:80%;
 
  @media screen and (max-width:768px) {
      display: none;
@@ -74,13 +75,12 @@ export const NavBtnLink = styled(LinkR)`
  white-space: nowrap;
  padding: 10px 22px;
  color: #fff;
- font-size: 26px;
+ font-size: 16px;
  outline: none;
  border: none;
  cursor: pointer;
  transition: all 0.2s ease-in-out;
  text-decoration: none;
- margin-left: 900px;
  font-family: 'Jost', sans-serif;
 
  &:hover {
@@ -96,7 +96,7 @@ export const NavBtnLink1 = styled(LinkR)`
  white-space: nowrap;
  padding: 10px 22px;
  color: #fff;
- font-size: 26px;
+ font-size: 16px;
  border-style: solid;
  border-color:  #F89E1B;
  cursor: pointer;

@@ -127,6 +127,7 @@ export const SocialMediaIconWrap= styled.div`
 display : flex;
 align-items: center;
 justify-content:center;
+margin-bottom: 5px;
 `
 
 export const SocialMediaIcon = styled.img`

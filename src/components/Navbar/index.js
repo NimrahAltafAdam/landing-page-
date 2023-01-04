@@ -38,8 +38,6 @@ const Navbar = ({toggle}) => {
                </MobileIcon>
                <NavBtn>
                    <NavBtnLink >Buy Pass</NavBtnLink>
-               </NavBtn>
-               <NavBtn>
                    <NavBtnLink1 >Connect Wallet</NavBtnLink1>
                </NavBtn>
            </NavbarContainer>
