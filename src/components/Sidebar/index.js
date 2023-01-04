@@ -1,38 +1,57 @@
 import React from 'react'
 import { SidebarContainer,
-Icon,
-CloseIcon,
+
 SidebarWrapper,
 SidebarMenu,
 SidebarLink,
 SideBtnWrap,
-SidebarRoute
+Btn1Link,
+Btn2Link,
+Icon,
+CloseIcon
  } from './SidebarElements'
+
+ 
  
 export const Sidebar = ({isOpen, toggle}) => {
   return (
    <SidebarContainer isOpen = {isOpen} onClick={toggle}>
-       <Icon onClick= {toggle}>
+   <Icon onClick= {toggle}>
        <CloseIcon />
        </Icon>
+       
        <SidebarWrapper>
            <SidebarMenu>
-               <SidebarLink to="about" onClick={toggle}>
-               About
+               <SidebarLink to="dashboard">
+               Dashboard
                </SidebarLink>
-               <SidebarLink to="discover" onClick={toggle}>
-               Discover
+               <SidebarLink to="analytics" >
+               Analytics
                </SidebarLink>
-               <SidebarLink to="services" onClick={toggle}>
-               Services
+               <SidebarLink to="stake">
+               Stake
                </SidebarLink>
-               <SidebarLink to="signup" onClick={toggle}>
-               Sign Up
+               <SidebarLink to="bond" >
+               
+               Bond
                </SidebarLink>
+               
+               <SidebarLink to="byPass" >
+               Buy Pass
+               </SidebarLink>
+               <SidebarLink to="pricechart" >
+               Price Chart
+               </SidebarLink>
+               <SidebarLink to="documentation" >
+               Documentation
+               </SidebarLink>
+               <SideBtnWrap>
+                <Btn1Link>
+                    Buy Pass
+                </Btn1Link>
+                <Btn2Link>Connect Wallet</Btn2Link>
+               </SideBtnWrap>
            </SidebarMenu>
-           <SideBtnWrap>
-               <SidebarRoute to='/signin'>Sign In</SidebarRoute>
-           </SideBtnWrap>
        </SidebarWrapper>
    </SidebarContainer>
   )

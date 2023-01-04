@@ -59,36 +59,6 @@ export const MobileIcon = styled.div`
  }
 `
 
-export const NavMenu = styled.ul`
- display: flex;
- align-items: center;
- text-align: center;
- list-style: none;
- margin-right: -22px;
-
- @media screen and (max-width:768px) {
-     display: none;
- }
-`
-
-export const NavItem = styled.li`
- height: 80px;
-`
-
-export const NavLinks = styled(LinkS)`
- color: #fff;
- display:flex;
- align-items: center;
- text-decoration: none;
- padding: 0 1rem;
- height: 100%;
- cursor: pointer;
-
- &.active {
-     border-bottom: 3px solid #01bf71;
- }
-`;
-
 export const NavBtn = styled.nav`
  display: flex;
  align-items: center;
@@ -100,20 +70,45 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
  border-radius: 50px;
- background: #01bf71;
+ background: #F89E1B;
  white-space: nowrap;
  padding: 10px 22px;
- color: #010606;
- font-size: 16px;
+ color: #fff;
+ font-size: 26px;
  outline: none;
  border: none;
  cursor: pointer;
  transition: all 0.2s ease-in-out;
  text-decoration: none;
+ margin-left: 900px;
+ font-family: 'Jost', sans-serif;
+
+ &:hover {
+     transition: all 0.2s ease-in-out;
+     background: #fff;
+     color: #F89E1B;
+ }
+`
+
+export const NavBtnLink1 = styled(LinkR)`
+ border-radius: 50px;
+ background: transparent;
+ white-space: nowrap;
+ padding: 10px 22px;
+ color: #fff;
+ font-size: 26px;
+ border-style: solid;
+ border-color:  #F89E1B;
+ cursor: pointer;
+ transition: all 0.2s ease-in-out;
+ text-decoration: none;
+ margin-left: 20px;
+ font-family: 'Jost', sans-serif;
+ 
 
  &:hover {
      transition: all 0.2s ease-in-out;
      background: #fff;
      color: #010606;
  }
-`
+ `

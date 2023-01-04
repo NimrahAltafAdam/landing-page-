@@ -17,6 +17,7 @@ export const SidebarContainer = styled.aside`
  transition: 0.3s ease-in-out;
  opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
  top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+ overflow: auto;
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -40,11 +41,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.div`
  display: grid;
  grid-template-columns: 1fr;
- grid-template-rows: repeat(6, 80px);
+ grid-template-rows: repeat(7, 80px);
  text-align: center;
 
  @media screen and (max-width: 480px) {
-     grid-template-rows: repeat(6, 60px);
+     grid-template-rows: repeat(7, 60px);
  }
 `
 
@@ -61,7 +62,7 @@ export const SidebarLink = styled(LinkS)`
  cursor: pointer;
 
  &:hover {
-     color: #01bf71;
+     color: #F89E1B;
      transition: 0.2s ease-in-out;
  }
 `
@@ -71,22 +72,45 @@ export const SideBtnWrap = styled.div`
  justify-content: center;
 `
 
-export const SidebarRoute = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
 
-  &:hover {
-      transition: all 0.2s ease-in-out;
-      background: #fff;
-      color: #010606;
-  }
+export const Btn1Link = styled(LinkR)`
+ border-radius: 50px;
+ background: #F89E1B;
+ white-space: nowrap;
+ padding: 10px 22px;
+ color: #fff;
+ font-size: 16px;
+ outline: none;
+ border: none;
+ cursor: pointer;
+ transition: all 0.2s ease-in-out;
+ text-decoration: none;
+ margin-right: 10px;
+
+ &:hover {
+     transition: all 0.2s ease-in-out;
+     background: #fff;
+     color: #F89E1B;
+ }
 `
+
+export const Btn2Link = styled(LinkR)`
+ border-radius: 50px;
+ background: transparent;
+ white-space: nowrap;
+ padding: 10px 22px;
+ color: #fff;
+ font-size: 16px;
+ border-style: solid;
+ border-color:  #F89E1B;
+ cursor: pointer;
+ transition: all 0.2s ease-in-out;
+ text-decoration: none;
+ 
+
+ &:hover {
+     transition: all 0.2s ease-in-out;
+     background: #fff;
+     color: #010606;
+ }
+ `
